@@ -18,7 +18,6 @@
 
 // console.log(resultado, resultado1, resultado2, resultado3, resultado4);
 
-
 function soma(a=10,b=5){
     return a*b;  // só mudar o sinal para outra operação
 }

@@ -18,15 +18,6 @@
 // console.log(resultado, resultado1, resultado2, resultado3, resultado4);
 
 function soma(a,b){
-
-<<<<<<< HEAD
-=======
-function soma(a,b){
-
-
-function soma(a=10,b=5){
-
->>>>>>> 70f2d91530261b98c8fd431696924da042cc5c27
     return a*b;  // só mudar o sinal para outra operação
-}
-console.log(soma(10, 90));
+    }
+    console.log(soma(10, 90));

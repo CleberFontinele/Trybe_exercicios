@@ -5,14 +5,14 @@
 // verificaPalindrome("desenvolvimento");
 // Retorno esperado: false
 
-var palavra = "arara";
+let palavra = "arara";
+let palindromo = "";
 function Palindromo(palavra) {
-    var palindromo = "";
-    for (var index = palavra.length - 1; index >= 0; index--) {
+    for (let index = palavra.length - 1; index >= 0; index--) {
         palindromo += palavra[index]
     }
 
-    if (palavra == palindromo) {
+    if (palavra === palindromo) {
         console.log(true);
     } else {
         console.log(false);

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela HTML</title>
+
+    <style>
+        h1 {
+            color:blue;
+            font-size: 25px;
+        }
+        ul {
+            color:green;
+            
+        }
+        th {
+            color:teal;
+        }
+        body {
+            background-color:lightblue;
+        }
+        td {
+            color:slateblue;
+            font-weight:bold; /*deixar em negrito*/
+            line-height:2em;  /*espaço entre a linha de cima e de baixo*/
+            text-align: center; /*colocar as palavras no centro,direita ou esquerda*/
+        }
+        #dog {
+            color:lightcoral;
+        }
+        #rabbit {
+            color: limegreen;
+        }
+        .nomes{
+          background-color:whitesmoke;
+          font-family:sans-serif;     /*  mudar fonte */
+          font-size: 30px;
+          font-style: italic;     /*deixar em italico*/
+                                           /*font: italic 30px sans-serif; esse comando faz as 3 ações acima */
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus animais de estimação</h1>
+
+    <ul class="nomes">
+        <li id="rabbit">Lito</li>
+        <li id="dog">Lady</li>
+        <li>Sammy</li>
+        <li>Dell</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Especie</th>
+                <th>Cor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lito</td>
+                <td>Coelho</td>
+                <td>Cinza</td>
+            </tr>
+            <tr>
+                <td>Lady</td>
+                <td>Cachorro</td>
+                <td>Branco</td>
+            </tr>
+            <tr>
+                <td>Sammy</td>
+                <td>Cachorro</td> 
+                <td>Preto</td>
+            </tr>
+            <tr>
+                <td>Dell</td>
+                <td>Gato</td>
+                <td>Preto e Branco</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

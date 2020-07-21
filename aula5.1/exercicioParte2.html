@@ -1,0 +1,52 @@
+<!-- Adicione ao seu HTML uma classe com alguns estilos para os seus dois parágrafos.
+Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;
+Altere algum estilo do primeiro deles.
+Recupere o subtítulo pela tag. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .paragraph {
+            background-color: rgb(8, 8, 105);
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(204, 201, 191);
+        }
+        .second-paragraph {
+            background-color: rgb(14, 133, 14);
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(11, 238, 241);
+        }
+    </style>
+</head>
+
+<body>
+   
+    <h2 id="page-title">Título</h2>
+    <div class="paragraph">Dê uma cor para este parágrafo!</div>
+    <h4 id="subtitle">Subtítulo</h4>
+    <div class="second-paragraph">Segundo parágrafo!</div>
+    
+    <script>
+         var title = document.getElementById("page-title");
+        title.innerHTML = "Vingadores";
+
+        var paragraph = document.getElementsByClassName("paragraph");
+        paragraph.innerHTML = 'EM'
+        paragraph.style.color = "blue";
+
+        var secondparagraph = document.getElementsByClassName("second-paragraph");
+        secondparagraph.innerHTML = "Estréia Hoje!";
+
+        var subtitle = document.getElementById("subtitle");
+        subtitle.innerHTML = "Guerra Cívil";
+
+    </script>
+    
+</body>
+</html>

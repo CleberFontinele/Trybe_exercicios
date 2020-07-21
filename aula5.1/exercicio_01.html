@@ -39,11 +39,18 @@
       </div>
     </div>
     <script>
-        function exercício5_1(){
-            let exercício5_1 = document.getElementsByTagName('p')[0]
-            exercício5_1.innerHTML = 'Cleber Fontinele - Desenvolvedor Júnior'
+        function descricao(){
+            let descricao = document.getElementsByTagName('p')[0]
+            descricao.innerHTML = 'Cleber Fontinele - Desenvolvedor Júnior'
         }
-        exercício5_1();
+        descricao();
+
+        function mudarCor(){
+            let mudaCor = document.querySelector('.main-content')
+            mudaCor.style.backgroundColor = '#0FA36B'
+        }
+        mudarCor();
+        
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()

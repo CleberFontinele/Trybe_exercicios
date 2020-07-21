@@ -30,7 +30,7 @@
     </style>
   </head>
   <body>
-    <h1 class="title">Exercício 5.1 - JavaEscript </h1>
+    <h1 class="title">Exercício 5.1 - JavaEscrepite </h1>
     <div class="main-content">
       <div class="center-content">
         <p>Texto padrão do nosso site</p>
@@ -56,6 +56,12 @@
             mudaCorRed.style.backgroundColor = 'white'
         }
         mudarCorVermelha();
+
+        function corrigir(){
+          let corrigirTagH1 = document.getElementsByClassName("title")[0];
+          corrigirTagH1.innerHTML = "Exercício 5.1 - JavaScript"
+        }
+        corrigir();
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:

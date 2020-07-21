@@ -62,6 +62,12 @@
           corrigirTagH1.innerHTML = "Exercício 5.1 - JavaScript"
         }
         corrigir();
+
+        function mudarTextoMaiusculo(){
+          let mudarTexto = document.getElementsByTagName('p')[0]
+          mudarTexto.innerHTML = mudarTexto.innerHTML.toUpperCase();
+        }
+        mudarTextoMaiusculo();
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:

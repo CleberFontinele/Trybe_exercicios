@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resposta"></div>
+
+    <input id="num1" /> <br>
+    <input id="num2" /> <br>
+    <a href="#" id="soma" class='operador'>Somar</a>
+    <a href="#" id="mult" class='operador'>Multiplicar</a>
+    <script>
+        const botoes = document.querySelectorAll(".operador");
+        const input1 = document.querySelector("#num1");
+        const input2 = document.querySelector("#num2");
+
+        for (let index = 0; index < botoes.length; index++) {
+            botoes[index].addEventListener('click', calcular);
+        }
+        
+
+        function calcular(event) {
+            let operacao = event.target.id;
+            let resultado = 0;
+            if (operacao == 'soma') {
+                resultado = parseInt(input1.value) + parseInt(input2.value);
+            } else {
+                resultado = parseInt(input1.value) * parseInt(input2.value);
+            }
+            
+            document.querySelector("#resposta").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

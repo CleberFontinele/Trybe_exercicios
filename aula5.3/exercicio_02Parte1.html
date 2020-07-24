@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = utf-8 />
+<title> Calculadora </title>
+</head>
+<body>
+
+  <label> Coloque este número ao quadrado:
+    <input type = "number" id = "square-input" size = "2">
+  </label>
+  <button  id = "square-button"> Calcular </button>
+  <br> <br>
+  
+  <label> Metade deste número:
+    <input type = "number" id = "half-input" size = "2">
+  </label>
+  <button id = "half-button"> Calcular </button>
+  <br> <br>
+  
+  <rótulo>
+    Fração:
+    <input type = "number" id = "percent1-input" size = "2">
+  </label>
+  <rótulo>
+    Todo:
+    <input type = "number" id = "percent2-input" size = "2">
+  </label>
+  <button id = "percent-button"> Calcular </button>
+  <br> <br>
+  
+  <label> Calcule a área do círculo com raio:
+    <input type = "number" id = "area-input" size = "2">
+  </label>
+  <button id = "area-button"> Calcular </button> 
+  <br> <br>
+  <div id = "solution"> </div>
+
+<script>
+  
+  // let n1 = parseInt(document.getElementById('square-input');
+  // let n1 = parseInt(document.getElementById('meia entrada');
+  // let n1 = parseInt(document.getElementById('percent1-input');
+  // let n1 = parseInt(document.getElementById('percent2-input');
+  // let n1 = parseInt(document.getElementById('area-input');
+    const btnSquare = document.getElementById("square-button");
+		const btnHalf = document.getElementById("half-button");
+		const btnPercent = document.getElementById("percent-button");
+		const btnArea = document.getElementById("area-button");
+		const divSoluction = document.getElementById("solution");
+
+		btnSquare.addEventListener("click", function() {
+			let myValue = document.getElementById("square-input").value;
+			divSoluction.innerText = Math.sqrt(myValue);
+		})
+
+		btnHalf.addEventListener("click", function() {
+			let myValue = document.getElementById("half-input").value;
+			divSoluction.innerText = myValue / 2;
+		})
+
+		btnPercent.addEventListener("click", function() {
+			let myValue = document.getElementById("percent1-input").value;
+			let myValue2 = document.getElementById("percent2-input").value;
+			divSoluction.innerText = (myValue / myValue2 * 100) + "%";
+		})
+
+		btnArea.addEventListener("click", function() {
+			let myValue = document.getElementById("area-input").value;
+			divSoluction.innerText = 	(Math.PI * myValue * myValue).toFixed(2);
+		})
+  
+</script>
+  
+</body>
+</html>
+<!-- Adicione uma tag de script e adicione as funções do exercício da calculadora
+Para cada operação, crie um ouvinte de evento para o botão e, quando clicar, 
+encontre o valor da entrada apropriada e mostre o resultado do cálculo na div da solução.
+Bônus: responda às teclas pressionadas para que o usuário não precise clicar no botão. -->

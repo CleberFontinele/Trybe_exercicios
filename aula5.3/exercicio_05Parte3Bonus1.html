@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+ </head>
+ 
+ <body>
+  
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+ </body>
+ <script>
+    let image = document.querySelector('img');
+        image.style.left = '0px';
+        
+    function catWalk() {
+        let currentLeft = parseInt(image.style.left); //parseInte tranformar a string '0px' em numero inteiro 
+        image.style.left = currentLeft + 10 + 'px';
+    
+        if (currentLeft > window.innerWidth - image.width) { // se o valor corrente (currentLeft) for maior que a largura da tela o gato aparece no inicio quando encostar a cabeça no final da tela.exemplo minha tela é 1000 de largura e o gato 100 quando o gato chegar na largura 900 ele aparece na posição 0 dinovo
+        image.style.left = '0px';
+        }
+    }
+    setInterval(catWalk, 50);
+    // console.log(window.innerWidth)//largura da tela 
+ </script>
+</html>

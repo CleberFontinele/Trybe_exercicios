@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+ </head>
+ 
+ <body>
+  
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+ </body>
+ <script>
+    let image = document.querySelector('img');
+        image.style.left = '0px';
+        let walkForward = true; // walkForward = andando para frente
+        
+    function catWalk() {
+        let currentLeft = parseInt(image.style.left); //parseInte tranformar a string '0px' em numero inteiro 
+        let img = image;
+        if (walkForward && (currentLeft > (window.innerWidth - img.width))) { 
+          walkForward = false;  
+        }
+        if (!walkForward && (currentLeft <= 0)) { 
+          walkForward = true;  
+        }
+
+        if (walkForward) {
+            image.style.left = currentLeft + 10 + 'px'; 
+        } else {
+            image.style.left = currentLeft - 10 + 'px';
+        }
+    }
+    setInterval(catWalk, 50);
+    // console.log(window.innerWidth)//largura da tela 
+ </script>
+</html>

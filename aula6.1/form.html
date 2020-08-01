@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aula 6.1</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <form action="" method="GET">
-    <fieldset>
-        <legend>Dados Pessoais</legend>
+    <!-- DADOS PESSOAIS -->
+        <fieldset id="dadosPessoais">
+        <legend id="dadosPessoais">Dados Pessoais</legend>
     <div>
         <label for="name">Nome:</label>
         <input id="name" name="name" type="text" maxlength="40" placeholder="Digite seu nome" required>
@@ -62,19 +64,21 @@
             <option value="TO">Tocantins</option>
         </select><br><br>
     </div>
-    <div>
+    <div id="casaAp">
+        <legend id="moradia">Moradia:</legend>
         <label for="casa"><span>Casa</span></label>
         <input type="radio" name="moradia" id="casa" required>
         <label for="apartamento"><span>Apartamento</span></label>
         <input type="radio" name="moradia" id="apartamento" required>
     </div>
-</form>
+
     </fieldset>
-    <fieldset>
-        <legend>Último emprego</legend>
+    <!-- ULTÍMO EMPREGO -->
+    <fieldset id="ultimoEmprego">
+        <legend id="ultimoEmprego">Último emprego</legend>
         <div>
             <label for="text"></label>
-            <textarea name="text" id="ultimoEmprego" cols="30" rows="10" maxlength="1000" required></textarea>
+            <textarea name="text" id="ultimoEmprego" cols="50" rows="10" maxlength="1000" required></textarea>
         </div>
         <div>
             <label for="cargo">Cargo:</label>
@@ -93,6 +97,9 @@
             <input id="dataSaida" type="date" type="date" required>
         </div>
     </fieldset>
-    
+    <!-- BOTÃO LIMPAR -->
+    <input id="clear" type="reset" value="Clear">
+    <!-- <button type="reset">Clear</button> -->
+</form>
 </body>
 </html>

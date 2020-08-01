@@ -11,29 +11,56 @@
         <legend>Dados Pessoais</legend>
     <div>
         <label for="name">Nome:</label>
-        <input id="name" name="name" type="text" maxlength="40" required>
+        <input id="name" name="name" type="text" maxlength="40" placeholder="Digite seu nome" required>
     </div>
     <div>
         <label for="email">Email:</label>
-        <input id="email" name="email" type="text" maxlength="50" required>
+        <input id="email" name="email" type="text" maxlength="50" placeholder="email@email.com" required>
     </div>
     <div>
         <label for="cpf" name='cpf'>CPF:</label>
-        <input id="cpf" type="text" maxlength="11" required>
+        <input id="cpf" type="text" maxlength="11" placeholder="000-000-000.00" required>
     </div>
     <div>
         <label for="endereco">Endereço:</label>
-        <input id="endereco" type="text" maxlength="200" required>
+        <input id="endereco" type="text" maxlength="200" placeholder="Digite seu endereço" required>
     </div>
     <div>
         <label for="cidade">Cidade:</label>
-        <input id="text" type="text" maxlength="28" required>
+        <input id="cidade" type="text" maxlength="28" placeholder="Digite sua cidade" required>
     </div>
     <div>
         <label for="estado">Estado</label>
-        <select required name="" id="estado">
-            <option value=""></option>
-        </select>
+        <select id="estado" type='text' name="estados-brasil" required>
+            <option value="" select disabled>Escolha o Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br><br>
     </div>
     <div>
         <label for="casa"><span>Casa</span></label>
@@ -43,7 +70,29 @@
     </div>
 </form>
     </fieldset>
-    
+    <fieldset>
+        <legend>Último emprego</legend>
+        <div>
+            <label for="text"></label>
+            <textarea name="text" id="ultimoEmprego" cols="30" rows="10" maxlength="1000" required></textarea>
+        </div>
+        <div>
+            <label for="cargo">Cargo:</label>
+            <input id="cargo" type="text" name="cargo" maxlength="40" required>
+        </div>
+        <div>
+            <label for="descricaoCargo">Descrição do Cargo</label>
+            <input id="descricaoCargo" type="text" name="descricaoCargo" maxlength="500" required>
+        </div>
+        <div>
+            <label for="dataInicio">Data de Início:</label>
+            <input id="dataInicio" type="date" name="date" min="1" max="31" required>
+        </div>
+        <div>
+            <label for="dataSaida">Data de Saída:</label>
+            <input id="dataSaida" type="date" type="date" required>
+        </div>
+    </fieldset>
     
 </body>
 </html>

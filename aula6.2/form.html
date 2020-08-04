@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 6.1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+    <form action="" method="GET">
+    <!-- DADOS PESSOAIS -->
+        <fieldset id="dadosPessoais">
+        <legend id="dadosPessoais">Dados Pessoais</legend>
+    <div class="form-group">
+        <label for="name">Nome:</label>
+        <input id="name" class="form-control" name="name" type="text" data-validate-field = "field-name" maxlength="40" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+        <!-- <label for="email">Email:</label> -->
+        <!-- <input id="email" name="email" type="text" maxlength="50" placeholder="email@email.com" required> -->
+        <!-- <input type="email" id="email" class="validate" data-validate="required, email"> -->
+        <label for="email">Email:</label>
+        <input class="form-control" type="email" id="email" class="validate" data-validate="required,email" placeholder="email@email.com"/>
+    </div>
+    <div class="form-group">
+        <label for="cpf" name='cpf'>CPF:</label>
+        <input class="form-control" id="cpf" type="text" maxlength="11" placeholder="000-000-000.00" required>
+    </div>
+    <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input class="form-control" id="endereco" type="text" maxlength="200" placeholder="Digite seu endereço" required>
+    </div>
+    <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input class="form-control" id="cidade" type="text" maxlength="28" placeholder="Digite sua cidade" required>
+    </div>
+    <div>
+        <label for="estado">Estado</label>
+        <select id="estado" type='text' name="estados-brasil" required>
+            <!-- <option value="" select disabled>Escolha o Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option> -->
+        </select><br><br>
+    </div>
+    <div id="casaAp">
+        <legend id="moradia">Moradia:</legend>
+        <label for="casa"><span>Casa</span></label>
+        <input type="radio" name="moradia" id="casa" required>
+        <label for="apartamento"><span>Apartamento</span></label>
+        <input type="radio" name="moradia" id="apartamento" required>
+    </div>
+
+    </fieldset>
+    <!-- ULTÍMO EMPREGO -->
+    <fieldset id="ultimoEmprego">
+        <legend id="ultimoEmprego">Último emprego</legend>
+        <div>
+            <label for="text"></label>
+            <textarea name="text" id="ultimoEmprego" cols="50" rows="10" maxlength="1000" required></textarea>
+        </div>
+        <div>
+            <label for="cargo">Cargo:</label>
+            <input id="cargo" type="text" name="cargo" maxlength="40" required>
+        </div>
+        <div>
+            <label for="descricaoCargo">Descrição do Cargo</label>
+            <input id="descricaoCargo" type="text" name="descricaoCargo" maxlength="500" required>
+        </div>
+        <div>
+            <label for="datepicker">Data de Início:</label>
+            <input id="datepicker" type="text" name="date" min="1" max="31" placeholder="Clique aqui:" required>
+        </div>
+        <div>
+            <label for="dataSaida">Data de Saída:</label>
+            <input id="dataSaida" type="date" type="date" min="1" max="31" required>
+        </div>
+    </fieldset>
+    <!-- BOTÃO LIMPAR -->
+    <input id="clear" type="reset" value="Clear">
+    <!-- <button type="reset">Clear</button> -->
+</form>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<script>
+    var picker = new Pikaday({
+        field: $('#datepicker')[0],
+        format: 'DD/MM/YYYY',
+    });
+</script>
+</body>
+</html>

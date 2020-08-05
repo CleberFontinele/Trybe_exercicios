@@ -1,0 +1,9 @@
+.tower-group-1 {
+    display: flex;
+    justify-content:space-between;
+    }
+    .tower-1-1 {
+    align-self:flex-end;
+    }
+    
+ 

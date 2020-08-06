@@ -26,3 +26,12 @@ createListStates();
 // } 
 // email.addEventListener('blur', validateEmail)
 
+new window.JustValidate('.formulario', {
+  Rules: {
+    email: {
+        required: true,
+        email: true
+    },
+   
+}
+});

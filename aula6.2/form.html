@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="container-fluid">
-    <form action="" method="GET">
+    <form id="formulario" action="" method="GET">
     <!-- DADOS PESSOAIS -->
         <fieldset id="dadosPessoais">
         <legend id="dadosPessoais">Dados Pessoais</legend>
@@ -18,11 +18,11 @@
         <input id="name" class="form-control" name="name" type="text" data-validate-field = "field-name" maxlength="40" placeholder="Digite seu nome" required>
     </div>
     <div class="form-group">
-        <!-- <label for="email">Email:</label> -->
+        <!-- <label for="email">Email:</label> --> 
         <!-- <input id="email" name="email" type="text" maxlength="50" placeholder="email@email.com" required> -->
         <!-- <input type="email" id="email" class="validate" data-validate="required, email"> -->
         <label for="email">Email:</label>
-        <input class="form-control" type="email" id="email" class="validate" data-validate="required,email" placeholder="email@email.com"/>
+        <input class="form-control" type="email" id="email" class="validate" data-validate="email" placeholder="email@email.com" required/>
     </div>
     <div class="form-group">
         <label for="cpf" name='cpf'>CPF:</label>
@@ -110,11 +110,12 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-<script>
+<script src="js/just-validade.js"></script>
+<!-- <script>
     var picker = new Pikaday({
         field: $('#datepicker')[0],
         format: 'DD/MM/YYYY',
     });
-</script>
+</script> -->
 </body>
 </html>

@@ -137,3 +137,34 @@
         }  
          
   }
+
+  @media Screen and (min-width: 360px) and (max-width: 640px) {
+    #aside {
+        display: none;
+    }
+  
+    body {
+        padding: 0px;
+    }
+    img {
+        width: 159%;
+        
+    }
+    h1 {
+        width: 110%;
+        font-size: 25px;
+        text-align: left;
+    }
+  
+    #header {
+       position: fixed;
+       width: 82.2%;
+      }
+
+    #navigation, ul {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      }  
+       
+}

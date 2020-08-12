@@ -24,7 +24,7 @@ const lesson1 = {
   };
   
   addNewKey(lesson2, 'turno', 'manhã');
-  console.log(lesson2);
+  //console.log(lesson2);
 
   // Exercicio 2
   
@@ -32,4 +32,7 @@ const lesson1 = {
     let arrayKeys = Object.keys(obj);
     return arrayKeys
   }
-  console.log(listKey(lesson2));
+  //console.log(listKey(lesson2));
+
+  const sizeObject = obj => Object.keys(obj).length;
+  console.log(sizeObject(lesson2));

@@ -50,7 +50,7 @@ const lesson1 = {
 
   // Exercicio 6
   const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
-  console.log(allLessons);
+  // console.log(allLessons);
   let allStudents = (obj) => {
     console.log(obj);
     let total = 0;
@@ -60,5 +60,13 @@ const lesson1 = {
   }
   return total;
   }
-  console.log(allStudents(allLessons));
-  
+  //console.log(allStudents(allLessons));
+
+  // Exercicio 7
+  const valueKeys = (obj, values) => {
+    let keys = Object.keys(obj);
+    
+    console.log(` ${values}  ${keys[values]}`);
+  }
+  valueKeys(lesson1, 0);
+  console.log();

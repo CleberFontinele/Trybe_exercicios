@@ -1,8 +1,8 @@
 let clickCount = 0;
 let textToDisplay = document.getElementById("text");
 
-document.getElementById("button_test")
-.addEventListener("click", () => textToDisplay.innerHTML = clickCount += 1);
+document.getElementById("buttonTeste")
+.addEventListener("click", () => document.getElementById('text').innerText = `${clickCount += 1}`);
 
 
 console.log("oi")

@@ -44,4 +44,6 @@ const lesson1 = {
   }
   //console.log(listValues(lesson2));
 
-  
+  // Exercicio 5
+  const allLessons = Object.assign({},{lesson1, lesson2, lesson3});
+  console.log(allLessons);

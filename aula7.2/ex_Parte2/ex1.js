@@ -27,12 +27,21 @@ const lesson1 = {
   //console.log(lesson2);
 
   // Exercicio 2
-  
-  function listKey (obj) {
+  const listKey = (obj) => {
     let arrayKeys = Object.keys(obj);
     return arrayKeys
   }
   //console.log(listKey(lesson2));
 
+  // Exercicio 3
   const sizeObject = obj => Object.keys(obj).length;
-  console.log(sizeObject(lesson2));
+  //console.log(sizeObject(lesson2));
+
+  // Exercicio 4
+  const listValues = obj => {
+    let arrayValues = Object.values(obj);
+    return arrayValues;
+  }
+  //console.log(listValues(lesson2));
+
+  

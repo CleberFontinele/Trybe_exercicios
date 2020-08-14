@@ -12,10 +12,10 @@ function sum(a, b) {
 
 assert.equal(sum(4, 5), 9);
 assert.equal(sum(0, 0), 0);
-assert.throws(function() {
+assert.throws(() =>{
   sum(4, '5');
 });
 
-assert.throws(function () {
+assert.throws(() => {
   sum(4, '5');
 }, /parameters must be numbers/);

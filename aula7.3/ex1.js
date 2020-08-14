@@ -9,6 +9,13 @@ function sum(a, b) {
 }
 
 // implemente seus testes aqui
-console.log(sum(4, 5));
-console.log(sum(0, 0));
-console.log(sum(4, '5'));
+
+assert.equal(sum(4, 5), 9);
+assert.equal(sum(0, 0), 0);
+assert.throws(function() {
+  sum(4, '5');
+});
+
+assert.throws(function () {
+  sum(4, '5');
+}, /parameters must be numbers/);

@@ -8,11 +8,11 @@ function sum(a, b) {
   return a + b;
 }
 
-// implemente seus testes aqui
+// implemente seus testes aqui 
 
 assert.equal(sum(4, 5), 9);
 assert.equal(sum(0, 0), 0);
-assert.throws(() =>{
+assert.throws(function () {
   sum(4, '5');
 });
 
